@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Weight Loss Meal Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #4b6cb7, #182848);
+            color: #fff;
+            padding: 40px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: slideInDown 1.5s ease-out forwards;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            letter-spacing: 2px;
+            color: #ffcc70;
+            animation: pulse 3s infinite;
+        }
+
+        .meal-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        .meal {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            transition: transform 0.4s ease, background 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .meal:hover {
+            transform: translateY(-12px) scale(1.03);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .meal h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffee93;
+        }
+
+        .meal ul li {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #f5f5f5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #ccc;
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                text-shadow: 0 0 10px #ffcc70, 0 0 20px #ffcc70, 0 0 30px #ff5733;
+            }
+            50% {
+                text-shadow: 0 0 20px #ff5733, 0 0 30px #ffcc70, 0 0 40px #ff5733;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vegetarian Weight Loss Meal Plan</h1>
+    </header>
+
+    <div class="meal-container">
+        <div class="meal">
+            <h2>Morning (7:00 AM – 9:00 AM)</h2>
+            <ul>
+                <li>Warm lemon water with chia seeds</li>
+                <li>1 bowl vegetable poha with sprouts</li>
+                <li>Green tea</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Mid-Morning (10:30 AM)</h2>
+            <ul>
+                <li>1 apple or pear</li>
+                <li>Handful of pumpkin seeds</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Lunch (1:00 PM)</h2>
+            <ul>
+                <li>Brown rice with dal and sautéed greens</li>
+                <li>Mixed raw vegetable salad with lemon</li>
+                <li>Low-fat curd</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Evening (4:30 PM)</h2>
+            <ul>
+                <li>Herbal tea or black coffee</li>
+                <li>Roasted soy nuts or makhana</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Dinner (7:30 PM)</h2>
+            <ul>
+                <li>Clear vegetable soup</li>
+                <li>Grilled tofu or paneer</li>
+                <li>Stir-fried zucchini and bell peppers</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 GymFuel Meals | All Rights Reserved
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Meal Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #141e30, #243b55);
+            color: #fff;
+            padding: 40px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            opacity: 0.25;
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: dropIn 1.5s ease-out forwards;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #fcd34d;
+            text-shadow: 2px 2px 6px #000;
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        .meal-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            animation: riseIn 1.2s ease-in-out;
+        }
+
+        .meal {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: all 0.4s ease;
+        }
+
+        .meal:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .meal h2 {
+            font-size: 1.6rem;
+            color: #ffdb58;
+            margin-bottom: 12px;
+        }
+
+        .meal ul li {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #f5f5f5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #ddd;
+            font-size: 0.9rem;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes dropIn {
+            from {
+                transform: translateY(-80px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes riseIn {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 10px #fcd34d, 0 0 20px #fcd34d, 0 0 30px #ff8c00;
+            }
+            50% {
+                text-shadow: 0 0 20px #ff8c00, 0 0 30px #fcd34d, 0 0 40px #ff8c00;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vegetarian Daily Meal Plan</h1>
+    </header>
+
+    <div class="meal-container">
+        <div class="meal">
+            <h2>Morning (6:30 AM – 8:30 AM)</h2>
+            <ul>
+                <li>Warm turmeric water with chia seeds</li>
+                <li>Vegetable upma with coconut chutney</li>
+                <li>1 cup almond milk or soy milk</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Mid-Morning (10:30 AM)</h2>
+            <ul>
+                <li>Seasonal fruits (mango, pomegranate, grapes)</li>
+                <li>1 cup green tea</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Lunch (12:30 PM – 2:00 PM)</h2>
+            <ul>
+                <li>Roti made with mixed grains or paratha with ghee</li>
+                <li>Bhindi masala or bottle gourd curry</li>
+                <li>Chana dal with steamed rice</li>
+                <li>Cucumber-tomato salad</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Evening Snack (4:30 PM – 5:30 PM)</h2>
+            <ul>
+                <li>Roasted makhana (fox nuts) with herbs</li>
+                <li>Masala buttermilk or mint lemonade</li>
+            </ul>
+        </div>
+
+        <div class="meal">
+            <h2>Dinner (7:00 PM – 8:30 PM)</h2>
+            <ul>
+                <li>Vegetable soup with whole wheat toast</li>
+                <li>Grilled paneer cubes or tofu stir fry</li>
+                <li>Chamomile tea before bed</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 GymFuel Meals | All Rights Reserved
+    </footer>
+</body>
+
+</html>

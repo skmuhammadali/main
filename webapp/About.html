@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GymFuel Meals</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+}
+nav {
+  margin-top: 15px;
+}
+nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+nav a:hover {
+  background: #f7c948;
+  color: #000;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=1600&q=80') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 140px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out forwards;
+}
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 20px rgba(0,0,0,0.7);
+}
+.hero p {
+  font-size: 1.4em;
+  color: #f0f0f0;
+}
+.section {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.section h2 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  color: #f7c948;
+  text-align: center;
+}
+.meals, .testimonials, .benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.meal, .benefit, .testimonial {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+.meal:hover, .benefit:hover {
+  background: #f7c948;
+  color: #000;
+  transform: scale(1.05);
+}
+.meal img, .testimonial img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 3px solid #f7c948;
+}
+ol {
+  list-style: decimal inside;
+  padding-left: 20px;
+  font-size: 1.15em;
+  color: #ddd;
+}
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+footer a {
+  color: #f7c948;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GymFuel Meals</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Meals.html">Meals</a>
+      <a href="Howitworks.html">How It Works</a>
+      <a href="Test.html">Testimonials</a>
+      <a href="Contact.html">Contact</a>
+      <a href="Login.html">Login</a>
+    </nav>
+    
+  </header>
+
+  <section class="hero">
+    <h1>Fuel Your Fitness Journey</h1>
+    <p>Nutritious. Delicious. Delivered to Your Door.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>GymFuel Meals is your ultimate partner in fitness-focused nutrition. We deliver pre-portioned, high-protein meals tailored to your goals — whether you’re shredding fat, building muscle, or just staying lean and healthy. All meals are chef-prepared, nutritionist-approved, and ready in minutes.</p>
+  </section>
+
+  <section class="section benefits">
+    <h2>Why Choose GymFuel?</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <h3>High Protein</h3>
+        <p>All meals are designed to give you a high-protein boost to fuel muscle recovery and growth.</p>
+      </div>
+      <div class="benefit">
+        <h3>Ready in Minutes</h3>
+        <p>No prep. No cooking. Just heat and eat. Perfect for your busy lifestyle.</p>
+      </div>
+      <div class="benefit">
+        <h3>Custom Meal Plans</h3>
+        <p>Choose your goals — we’ll take care of the macros. Plans for bulking, cutting, and maintenance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="meals">
+    <h2>Featured Meals</h2>
+    <div class="meals">
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?chicken,rice" alt="Chicken & Rice">
+        <h3>Grilled Chicken & Rice</h3>
+        <p>Lean protein and complex carbs to power your day.</p>
+      </div>
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?salmon,quinoa" alt="Salmon & Quinoa">
+        <h3>Salmon & Quinoa Bowl</h3>
+        <p>Omega-3s and nutrients in a tasty package.</p>
+      </div>
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?vegan,meal" alt="Vegan Power Bowl">
+        <h3>Vegan Power Bowl</h3>
+        <p>Plant-based protein and greens for clean energy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <h2>How It Works</h2>
+    <ol>
+      <li><strong>Choose your plan:</strong> Select a meal plan based on your goals and preferences.</li>
+      <li><strong>We cook and deliver:</strong> Fresh, chef-made meals are delivered weekly.</li>
+      <li><strong>Heat and eat:</strong> Ready in 2–3 minutes. No prep, no mess.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer 1">
+        <p>"GymFuel saves me so much time and helps me stay on track. The meals are tasty and macro-perfect!"</p>
+        <strong>— Jake M., Fitness Coach</strong>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer 2">
+        <p>"As a vegan bodybuilder, finding good meals was hard. GymFuel's plant-based meals are a game changer."</p>
+        <strong>— Alicia R., Athlete</strong>
+      </div>
+      <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Customer 3">
+        <p>"I’ve lost 12 pounds and feel stronger than ever. I just pick, eat, and go — it’s that easy."</p>
+        <strong>— Brandon L., Tech Manager</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out with questions, suggestions, or just to say hello.</p>
+    <p>Email: <a href="mailto:support@gymfuelmeals.com">support@gymfuelmeals.com</a></p>
+    <p>Phone: +1 (555) 123-4567</p>
+    <p>Follow us on Instagram: <a href="#">@gymfuelmeals</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GymFuel Meals. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+  </footer>
+
+</body>
+</html>

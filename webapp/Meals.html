@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meals | GymFuel Meals</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: #f0f0f0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 25px 50px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+  background: #f7c948;
+  color: #000;
+  box-shadow: 0 0 15px #f7c948;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=1600&q=80') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 160px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  backdrop-filter: blur(2px);
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.hero h1 {
+  font-size: 4.2em;
+  margin-bottom: 18px;
+  text-shadow: 4px 4px 25px rgba(0,0,0,0.8);
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.section h2 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #f7c948;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+.meals, .testimonials, .benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.meal, .benefit, .testimonial {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
+}
+
+.meal:hover, .benefit:hover {
+  background: #f7c948;
+  color: #000;
+  transform: scale(1.07);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.meal img, .testimonial img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.testimonial img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 14px;
+  border: 3px solid #f7c948;
+  box-shadow: 0 0 12px #f7c94855;
+}
+
+ol {
+  list-style: decimal inside;
+  padding-left: 20px;
+  font-size: 1.2em;
+  color: #ddd;
+}
+
+footer {
+  background: #0a0a0a;
+  color: #aaa;
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #333;
+}
+
+footer a {
+  color: #f7c948;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GymFuel Meals</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Meals.html">Meals</a>
+        <a href="Howitworks.html">How It Works</a>
+        <a href="Test.html">Testimonials</a>
+        <a href="Contact.html">Contact</a>
+        <a href="Login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Meals</h1>
+    <p>Fresh. High-Protein. Chef-Approved.</p>
+  </section>
+
+  <section class="section">
+    <div class="meals">
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?chicken,rice" alt="Grilled Chicken & Rice">
+        <h3>Grilled Chicken & Rice</h3>
+        <p>Lean chicken breast with brown rice and steamed veggies.</p>
+      </div>
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?salmon,quinoa" alt="Salmon & Quinoa Bowl">
+        <h3>Salmon & Quinoa Bowl</h3>
+        <p>Heart-healthy salmon with quinoa and roasted greens.</p>
+      </div>
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?vegan,meal" alt="Vegan Power Bowl">
+        <h3>Vegan Power Bowl</h3>
+        <p>Plant-based protein, lentils, and fresh vegetables.</p>
+      </div>
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?beef,broccoli" alt="Beef & Broccoli">
+        <h3>Beef & Broccoli</h3>
+        <p>Lean steak with sautéed broccoli and garlic brown sauce.</p>
+      </div>
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?turkey,pasta" alt="Turkey Pasta Bowl">
+        <h3>Turkey Pasta Bowl</h3>
+        <p>Whole wheat pasta, ground turkey, and spinach tomato sauce.</p>
+      </div>
+      <div class="meal">
+        <img src="https://source.unsplash.com/400x300/?eggs,avocado" alt="Breakfast Fuel">
+        <h3>Breakfast Fuel</h3>
+        <p>Scrambled eggs, avocado, oats, and fruit medley.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GymFuel Meals. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+  </footer>
+
+</body>
+</html>
